@@ -37,7 +37,7 @@ Welcome to the Temperature Converter website! This project allows users to easil
 
 🌐 Live Demo
 
-Explore the Temperature Converter website with our live demo - 
+Explore the Temperature Converter website with our live demo - https://chula805.github.io/Temperature--Converter/
 
 📬 Feedback
 
