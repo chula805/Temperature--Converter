@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-image: linear-gradient(to right, #30c5d2 , #471069);
+    color: #222;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .title {
+    color: #222;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  
+  .temperature-converter {
+    background: #ecebeb;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 25px 20px;
+    min-width: 320px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .result {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .result-heading {
+    color: #555;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  
+  .converted-value {
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+  }
+  
+  label {
+    color: #555;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+  
+  input,
+  select {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+  
+  input:focus {
+    border: 1px solid #4c49f3;
+  }
+  
+  .degree-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .degree-field {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+  }
+  
+  .temp-field{
+    margin-left: 15px;
+  }
+
+  option {
+    background-image: linear-gradient(to right, #83489e , #c5302e);
+    color: #000000;
+    font-weight: 700;
+  }
+  
+  #convert-btn {
+    background: linear-gradient(to right, #83489e, #c5302e);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 12px 80px;
+    transition: all 0.3s ease-in;
+  }
+  
+  #convert-btn:hover {
+    background: linear-gradient(to right, #c5302e, #83489e);
+  }
+
+  #reset-btn{
+    background: linear-gradient(to right, #f44369, #3e3b92);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 12px 80px;
+    transition: all 0.3s ease-in;
+  }
+
+  #reset-btn:hover{
+    background: linear-gradient(to right, #3e3b92, #f44369);
+  }
+
+
+  @media (max-width:768px){
+    .container {
+      display: inline-block;
+  }
+  }
+
+  @media (max-width:425px){
+    .temperature-converter {
+      padding: 30px 10px 20px;
+      width: 90%;
+      margin-left: 20px;
+  }
+  .degree-type {
+    display: inline-block;
+    padding: 20px 50px;
+}
+.temp-field {
+  margin-left: 0;
+}
+
+.degree-field {
+  width: 100%;
+}
+  }
+
+  @media (max-width: 320px){
+    .temperature-converter {
+      margin-left: 0px;
+  }
+  }
+
+  
+
+  
+  
